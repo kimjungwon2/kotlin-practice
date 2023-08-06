@@ -42,3 +42,4 @@ bin/
 .DS_Store
 /hs_err_pid22904.log
 /replay_pid22904.log
+/.idea/

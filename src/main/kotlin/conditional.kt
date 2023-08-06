@@ -38,3 +38,23 @@ fun checkNum(score : Int){
 }
 
 //Expression vs Statement
+
+// 5. Array and List
+
+// array
+// List 1. list 2. MutableList => ArrayList
+
+fun array(){
+    val array = arrayOf(1,2,3)
+    val list = listOf(1,2,3)
+
+    val array2 = arrayOf(1,"d",3.4f)
+    val list2 = listOf(1,"d",11L)
+
+    array[0]=3
+
+    val arrayList =arrayListOf<Int>()
+    arrayList.add(10)
+    arrayList.add(20)
+
+}
