@@ -1,7 +1,14 @@
 fun main(){
-    helloWorld()
+    //3. String Template
 
-    println(add(4,5))
+    val name = "james"
+    val lastName = "Kim"
+    println("my name is ${name + lastName} I'm male")
+    println("is this true ${1==0}")
+    println("this is 2\$a")
+
+
+
 }
 
 //1. 함수
