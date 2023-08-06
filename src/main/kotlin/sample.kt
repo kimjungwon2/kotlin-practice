@@ -6,9 +6,7 @@ fun main(){
     println("my name is ${name + lastName} I'm male")
     println("is this true ${1==0}")
     println("this is 2\$a")
-
-
-
+    
 }
 
 //1. 함수
