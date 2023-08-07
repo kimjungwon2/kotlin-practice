@@ -1,5 +1,5 @@
 fun main(){
-    forAndWhile()
+    nullCheck()
 }
 
 //4. 조건식
@@ -90,3 +90,33 @@ fun forAndWhile(){
         index++
     }
 }
+
+// 7. NonNull / Nullable
+fun nullCheck(){
+    // 컴파일 시점에서 NPE를 잡아줌
+
+    var name : String = "joyce"
+    var nullName : String? = null
+
+    var nameInUpperCase = name.uppercase()
+
+    var nullNameInUpperCase = nullName?.uppercase()
+
+    //?: 엘비스 연산자
+    val lastName:String? ="kim"
+    val fullName = name +" "+ (lastName?:"No lastName")
+    println(fullName)
+
+}
+
+//!! 컴파일한테 null이 아니다는 걸 보증해준다. 이것보다는 위의 방식을 쓰는 게 좋다.
+fun ignoreNulls(str : String?){
+    val mNotNull : String = str!!
+    val upperCase = mNotNull.uppercase()
+
+    val email : String? ="joycehongXXX@nana.vom"
+    email?.let{
+        println("my email is $email")
+    }
+}
+
