@@ -1,5 +1,5 @@
 fun main(){
-    checkNum(1)
+    forAndWhile()
 }
 
 //4. 조건식
@@ -57,4 +57,36 @@ fun array(){
     arrayList.add(10)
     arrayList.add(20)
 
+}
+
+// 6. For / while
+fun forAndWhile(){
+    val students = arrayListOf("joyce","james","jenny","jennifer")
+
+    for(name in students){
+        println("$name")
+    }
+
+    var sum:Int =0
+//
+//    for(i in 1..10 step 2){
+//        sum+=i
+//    }
+
+    for((index,name) in students.withIndex()){
+        println("${index+1}번째 학생 : $name")
+    }
+
+
+    for(i in 1 until 100){ //100을 포함하지 않는다. 1..100=>1부터 100이다.
+        sum+=i
+    }
+
+    println(sum)
+
+    var index = 0
+    while(index<10){
+        println("current index : $index")
+        index++
+    }
 }
