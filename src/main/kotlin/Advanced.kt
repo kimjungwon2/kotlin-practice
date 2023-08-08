@@ -59,3 +59,5 @@ val calculateGrade : (Int) -> String ={
 fun invokeLambda(lambda: (Double) ->Boolean): Boolean{
     return lambda(5.2343)
 }
+
+// POJO: 어떤 모델이 되는 클래스. 비어있는 틀이 되는 클래스.
