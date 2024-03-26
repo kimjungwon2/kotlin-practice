@@ -11,4 +11,10 @@ fun main(args: Array<String>) {
     var num3: Long? =1_000L
     num3 = null
 
+    var Person = Person("김정원")
+
+}
+
+class Person(s: String) {
+
 }
