@@ -4,6 +4,11 @@ fun main(args: Array<String>) {
 
     val number2 = 10
 
+    var number3:Long
+    number3 = 5
+    println(number3)
 
+    var num3: Long? =1_000L
+    num3 = null
 
 }
