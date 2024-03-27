@@ -2,6 +2,10 @@ import java.lang.IllegalArgumentException
 
 fun main(){
 
+    val str: String? = "ABC"
+    println(str?.length ?:0)
+
+
 }
 
 fun startsWithA1(str: String?): Boolean{
