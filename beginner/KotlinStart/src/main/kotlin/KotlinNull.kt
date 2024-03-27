@@ -1,11 +1,7 @@
 import java.lang.IllegalArgumentException
 
 fun main(){
-
-    val str: String? = "ABC"
-    println(str?.length ?:0)
-
-
+    println(startsWith(null))
 }
 
 fun startsWithA1(str: String?): Boolean{
@@ -44,4 +40,8 @@ fun startsWithA3(str: String?): Boolean{
 
 fun improveStartsWithA3(str: String?): Boolean{
     return str?.startsWith("A") ?: false
+}
+
+fun startsWith(str: String?): Boolean{
+    return str!!.startsWith("A")
 }
