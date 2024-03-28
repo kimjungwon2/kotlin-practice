@@ -17,4 +17,8 @@ fun main(args: Array<String>) {
 
 class Person(s: String) {
 
+    val age: Any
+        get() {
+            TODO()
+        }
 }
