@@ -7,6 +7,9 @@ fun main(){
     val num2:Long = num1?.toLong() ?:0L
 
     printAgeIfPerson(null)
+
+    val person = Person("김정원",100)
+    println("이름 : ${person.name}")
 }
 
 fun printAgeIfPerson(obj: Any?){
