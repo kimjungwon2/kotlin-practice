@@ -15,14 +15,4 @@ fun main(args: Array<String>) {
 
 }
 
-class Person(name: String, age:Int) {
-
-    val age: Any
-        get() {
-            TODO()
-        }
-    val name: Any
-        get() {
-            TODO()
-        }
-}
+class Person(val name: String, val age: Int)
