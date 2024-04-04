@@ -9,4 +9,3 @@ fun parseIntOrThrow(str: String): Int{
         throw IllegalArgumentException("주어진 ${str}는 숫자가 아닙니다")
     }
 }
-
