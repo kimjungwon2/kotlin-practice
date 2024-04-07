@@ -1,7 +1,7 @@
 package lecture08
 
 fun main(){
-    repeat("Hello World")
+    repeat("Hello World", useNewLine = false)
 }
 
 fun repeat(
