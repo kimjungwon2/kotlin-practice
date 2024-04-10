@@ -8,8 +8,8 @@ fun main(){
 }
 
 class Person(
-    val name: String,
-    var age:Int
+    val name: String = "김정원",
+    var age: Int = 29
 ){
     init{
         if(age<=0){
@@ -17,11 +17,4 @@ class Person(
         }
     }
 
-    constructor(name: String): this(name, 1){
-        println("첫 번째 부생성자")
-    }
-
-    constructor(): this("홍길동"){
-        println("두 번째 부생성자")
-    }
 }
