@@ -8,11 +8,14 @@ fun main(){
 }
 
 class Person(
-    val name: String = "김정원",
+    name: String = "김정원",
     var age: Int = 29
 ){
-    val uppercaseName: String
-        get() = this.name.uppercase()
+
+    var name = name
+        set(value){
+            field = value.uppercase()
+        }
 
     init{
         if(age<=0){
