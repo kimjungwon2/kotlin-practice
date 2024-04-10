@@ -17,7 +17,11 @@ class Person(
         }
     }
 
-    constructor(name: String): this(name, 1)
+    constructor(name: String): this(name, 1){
+        println("첫 번째 부생성자")
+    }
 
-
+    constructor(): this("홍길동"){
+        println("두 번째 부생성자")
+    }
 }
