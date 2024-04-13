@@ -2,7 +2,9 @@ package lecture12
 
 
 fun main(){
-
+    println(Singleton.a)
+    Singleton.a +=10
+    println(Singleton.a)
 }
 
 class Person private constructor(
