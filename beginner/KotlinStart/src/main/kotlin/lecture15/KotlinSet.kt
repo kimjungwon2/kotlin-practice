@@ -11,6 +11,7 @@ fun main(){
         println("${i} ${v}")
     }
 
+    mutableSetOf(100L)
 
 
 }
