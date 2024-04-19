@@ -9,5 +9,16 @@ fun main(){
     mapOf(1 to "MONDAY", 2 to "TUESDAY")
 
 
+    for (key in oldMap.keys){
+        println(key)
+        println(oldMap[key])
+    }
+
+    for ((key, value) in oldMap.entries){
+        println(key)
+        println(value)
+    }
+
+
 
 }
