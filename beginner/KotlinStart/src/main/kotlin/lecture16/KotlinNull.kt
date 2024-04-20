@@ -1,7 +1,6 @@
-package lecture15
+package lecture16
 
 fun main(){
-
     val str = "ABC"
     println(str.lastChar())
 }
