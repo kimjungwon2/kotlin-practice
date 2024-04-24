@@ -17,6 +17,15 @@ fun main(){
         .map{fruit->fruit.currentPrice}
 
     println(applePrices)
+
+    val isAllApple = fruit2s.all{fruit->fruit.name =="사과"}
+    println(isAllApple)
+
+    val isNoApple = fruit2s.none{fruit->fruit.name=="사과"}
+    println(isNoApple)
+
+    val isNoApple2 = fruit2s.any {fruit -> fruit.factoryPrice >=10_000 }
+    println(isNoApple2)
 }
 
 
