@@ -11,6 +11,12 @@ fun main(){
     val apple = fruit2s.filter { fruit->fruit.name =="사과"}
 
     println(apple)
+
+    //사과의 가격들
+    val applePrices = fruit2s.filter { fruit->fruit.name=="사과" }
+        .map{fruit->fruit.currentPrice}
+
+    println(applePrices)
 }
 
 
