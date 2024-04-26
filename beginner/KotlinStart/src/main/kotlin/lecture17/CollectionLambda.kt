@@ -29,6 +29,10 @@ fun main(){
 
     val map:Map<Long,Fruit2> = fruit2s.associateBy{ fruit -> fruit.id}
     println(map)
+
+    val map2:Map<String, List<Fruit2>> = fruit2s.groupBy{ fruit->fruit.name}
+            .filter{(key,value) -> key=="사과"}
+    println(map2)
 }
 
 
