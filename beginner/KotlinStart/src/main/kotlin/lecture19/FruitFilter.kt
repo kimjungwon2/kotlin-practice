@@ -11,3 +11,4 @@ typealias FruitFilter = (Fruit)->Boolean
 fun filterFruits2(fruits:List<Fruit>, filter:FruitFilter){
 
 }
+
