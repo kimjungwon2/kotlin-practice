@@ -26,6 +26,9 @@ fun main(){
 
     val isNoApple2 = fruit2s.any {fruit -> fruit.factoryPrice >=10_000 }
     println(isNoApple2)
+
+    val map:Map<Long,Fruit2> = fruit2s.associateBy{ fruit -> fruit.id}
+    println(map)
 }
 
 
