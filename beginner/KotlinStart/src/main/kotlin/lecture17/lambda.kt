@@ -22,6 +22,9 @@ fun main(){
 
     filterFruits(fruits, isApple2)
 
+    val map: Map<String, List<Fruit>> = fruits.groupBy {fruit -> fruit.name}
+    println(map)
+
 
 }
 
