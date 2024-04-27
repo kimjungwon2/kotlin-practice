@@ -9,7 +9,7 @@ fun main(){
     run {
         numbers.forEach{ number->
         if(number ==2){
-            return@run
+            return@forEach
         }}
     }
 }
