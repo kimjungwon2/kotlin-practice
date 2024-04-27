@@ -5,4 +5,11 @@ fun main(){
 
     numbers.map {it + 1}.forEach{println(it)}
 
+
+    run {
+        numbers.forEach{ number->
+        if(number ==2){
+            return@run
+        }}
+    }
 }
