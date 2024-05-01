@@ -8,6 +8,10 @@ fun main(){
 //        personRepository.save(this)
     }
 
+    mutableListOf("one", "two", "three")
+        .also{println("four 추가 이전 자금 값: $it")}
+        .add("four")
+
 
 }
 
@@ -19,8 +23,8 @@ fun createPerson(
 ): Person{
     return Person(
         name = name,
-        age = age,
+        age = age
     ).apply {
-        hobby = hobby
+//        this.hobby = hobby
     }
 }
